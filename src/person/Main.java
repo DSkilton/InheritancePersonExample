@@ -18,7 +18,9 @@ public class Main {
         // TODO code application logic here
 
         Person Dave = new Person("Dave", "04485159456"); 
+        Person Cheryl = new Person("Cheryl", "87984562389");
         System.out.println(Dave);
+        System.out.println(Cheryl);
     }
     
 }

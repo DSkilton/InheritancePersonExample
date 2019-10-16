@@ -16,8 +16,8 @@ public class Person {
     private String fullName;
     
     public Person (String fullName, String mobile) {
-        setFullName(fullName);
-        setMobile(mobile);
+        this.fullName = fullName;
+        this.mobile = mobile;
         
     }
     
