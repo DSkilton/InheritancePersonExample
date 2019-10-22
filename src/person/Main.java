@@ -19,8 +19,14 @@ public class Main {
 
         Person Dave = new Person("Dave", "04485159456"); 
         Person Cheryl = new Person("Cheryl", "87984562389");
-        System.out.println(Dave);
-        System.out.println(Cheryl);
+//        System.out.println(Dave);
+//        System.out.println(Cheryl);
+        
+        Student Jeff = new Student("Jeff", "87984562389", "Java Baby!");
+        System.out.println(Jeff);
+        
+        Student Ricky = new Student("Ricky", "87984562388");
+        System.out.println(Ricky);
     }
     
 }

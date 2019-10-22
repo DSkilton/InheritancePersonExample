@@ -15,10 +15,10 @@ public class Person {
     private String mobile; 
     private String fullName;
     
+    //constructor
     public Person (String fullName, String mobile) {
         this.fullName = fullName;
-        this.mobile = mobile;
-        
+        this.mobile = mobile;  
     }
     
     public String getFullName(){
@@ -40,7 +40,5 @@ public class Person {
     @Override
     public String toString(){
         return fullName + " " + mobile;
-    }
-  
-    
+    } 
 }
