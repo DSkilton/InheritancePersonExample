@@ -12,33 +12,55 @@ package person;
 public class Person {
     
     //Private variable 
-    private String mobile; 
-    private String fullName;
+    private String firstName; 
+    private String lastName;
+    private String address;
+    private String mobile;
+    private String email;
     
     //constructor
-    public Person (String fullName, String mobile) {
-        this.fullName = fullName;
-        this.mobile = mobile;  
+    public Person (String fullName, String lastName, String address, String mobile, String email ) {
+        this.lastName = fullName;
+        this.firstName = lastName;  
+        this.address = address;
+        this.mobile = mobile;
+        this.email = email;
     }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }    
     
     public String getFullName(){
-        return fullName;
+        return lastName;
     }
     
     public void setFullName(String fullName){
-        this.fullName = fullName;
+        this.lastName = fullName;
     }
     
     public String getMobile(){
-        return mobile;
+        return firstName;
     }
     
     public void setMobile(String mobile){
-        this.mobile = mobile;
+        this.firstName = mobile;
     }
   
     @Override
     public String toString(){
-        return fullName + " " + mobile;
+        return lastName + " " + firstName + " " + address + " " + mobile + " " + email;
     } 
 }

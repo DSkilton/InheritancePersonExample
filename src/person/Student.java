@@ -1,38 +1,75 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package person;
+
+import java.util.Date;
 
 /**
  *
  * @author MC03353
  */
 public class Student extends Person {
+    private String grades;
+    private Date dateCreated;
     
-    private String course;
+     public Student (String firstName, String lastName, String address, String mobile, String email, String grades, Date dateCreated) {
+         super(firstName, lastName, address, mobile, email);
+         this.grades = grades;
+         this.dateCreated = dateCreated;
+    }
+     
+    public String getGrades(){
+        return grades;
+    }
     
-    public Student(String fullName, String mobile) {
-        super(fullName, mobile);
-    } 
+    public void setGrades(String grades){
+        this.grades = grades; 
+    }
     
-    public Student(String fullName, String mobile, String course) {
-        super(fullName, mobile);
-        this.course = course; 
-    } 
+    public Date getDateCreated(){
+        return dateCreated;
+    }
+    
+    public void setDateCreated(Date dateCreated){
+        this.dateCreated = dateCreated;
+    }
 
-    public String getCourse(){
-        return course;
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
     
-    public void setCourse(String course){
-        this.course = course; 
+    public String getLastName(){
+        return lastName;
     }
-    
-        @Override
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }    
+        
+    @Override
     public String toString(){
-        return getFullName() + " " + getMobile() + " " + course;
-    } 
-    
+        return getFirstName() + " " + getLastName() + " " + getAddress() + " " + getMobile()  + " " + getEmail()  + " " + getGrades();
+    }     
 }
