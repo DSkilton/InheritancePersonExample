@@ -10,10 +10,9 @@ public class Student extends Person {
     private String grades;
     private Date dateCreated;
     
-     public Student (String firstName, String lastName, String address, String mobile, String email, String grades, Date dateCreated) {
+     public Student (String firstName, String lastName, String address, String mobile, String email, String grades) {
          super(firstName, lastName, address, mobile, email);
          this.grades = grades;
-         this.dateCreated = dateCreated;
     }
      
     public String getGrades(){

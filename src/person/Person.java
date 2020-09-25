@@ -12,11 +12,11 @@ package person;
 public class Person {
     
     //Private variable 
-    private String firstName; 
-    private String lastName;
-    private String address;
-    private String mobile;
-    private String email;
+    String firstName; 
+    String lastName;
+    String address;
+    String mobile;
+    String email;
     
     //constructor
     public Person (String fullName, String lastName, String address, String mobile, String email ) {
